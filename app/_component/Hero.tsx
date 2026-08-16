@@ -7,13 +7,12 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative  overflow-hidden bg-[#f8f5f0]">
+    <section className="relative overflow-hidden bg-[#f8f5f0]">
       <div className="mx-auto flex min-h-[calc(100vh-92px)] max-w-[1440px] flex-col justify-center px-5 py-12 sm:px-8 lg:px-12 lg:py-16 xl:px-16">
         <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 xl:grid-cols-[0.85fr_1.15fr]">
-          
 
-          <div className="relative z-10 ">
-            
+          <div className="relative z-10">
+
             {/* Small label */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -114,7 +113,7 @@ export default function Hero() {
                 delay: 0.15,
                 ease: [0.76, 0, 0.24, 1],
               }}
-              className="relative h-screen w-full overflow-hidden"
+              className="relative h-screen w-full overflow-hidden bg-[#f8f5f0]"
             >
               <motion.div
                 initial={{ scale: 1.12 }}
@@ -126,17 +125,17 @@ export default function Hero() {
                 }}
                 className="absolute inset-0"
               >
-               <Image
-                src="/images/hero-fashion.png"
-                alt="The Wardrobe Edit"
-                fill
-                priority
-                className="object-cover "
+                <Image
+                  src="/images/bb.png"
+                  alt="The Wardrobe Edit"
+                  fill
+                  priority
+                  className="object-cover mix-blend-multiply"
                 />
               </motion.div>
 
               {/* Image overlay */}
-              <div className="absolute inset-0 " />
+              <div className="absolute inset-0" />
             </motion.div>
 
             <motion.div
